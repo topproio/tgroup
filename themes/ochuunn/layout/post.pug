@@ -1,0 +1,15 @@
+extends views/main.pug
+
+block head
+  title
+    = page.title + ' - ' + config.title
+
+block main
+  include mixins/post.pug
+  +post(page, 'post')
+
+  //- comment
+  if theme.comment_plugin == 'valine'
+    include plugins/valine.pug
+  else
+    include plugins/livere.pug
