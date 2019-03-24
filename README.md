@@ -28,5 +28,5 @@ $ hexo clean && hexo deploy --generate
 
 ## 相关链接
 
-[hexo](https://hexo.io/zh-cn/)
-[Tgroup](https://topproio.github.io/tgroup/)
+- [hexo](https://hexo.io/zh-cn/)
+- [Tgroup](https://topproio.github.io/tgroup/)
