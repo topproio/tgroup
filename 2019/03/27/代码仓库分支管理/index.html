@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Tgroup"><link rel="alternative" href="/atom.xml" title="Tgroup" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>代码仓库分支管理 - Tgroup</title><link rel="stylesheet" href="/tgroup/css/main.css"><link rel="stylesheet" href="/tgroup/js/fancybox/jquery.fancybox.min.css"><!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--><script src="/tgroup/js/jquery-3.1.1.min.js"></script><script src="/tgroup/js/fancybox/jquery.fancybox.min.js"></script></head><body style="opacity:0"><header class="head"><h1 class="head-title u-fl"><a href="/tgroup/">Tgroup</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a class="head-nav__link" href="/tgroup/archives">Catalog/（目录）</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"><time class="post__time" datetime="2019-03-27T10:38:05.000Z">March 27, 2019</time><h1 class="post__title"><a href="/tgroup/2019/03/27/代码仓库分支管理/">代码仓库分支管理</a></h1><div class="post__main echo"><table>
+<thead>
+<tr>
+<th>分支名</th>
+<th>描述</th>
+<th>命名</th>
+<th>规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>master</td>
+<td>主分支</td>
+<td>master</td>
+<td>负责上线基线</td>
+</tr>
+<tr>
+<td>release</td>
+<td>发布分支</td>
+<td>release_x.x.x</td>
+<td>负责合并 feature 分支 (feature_x.x.x_iloveyou)，提交测试完成后合并到 master</td>
+</tr>
+<tr>
+<td>feature</td>
+<td>开发分支</td>
+<td>feature_x.x.x_iloveyour</td>
+<td>负责每个工程师各自的功能开发，x.x.x 一般是版本号</td>
+</tr>
+<tr>
+<td>hotfix</td>
+<td>线上紧急 bug 修正分支</td>
+<td>hotfix_x.x.x_iloveyour</td>
+<td>负责线上 bug 的修正，从 master 拉出，完成测试后并入 master</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>生产环境发布 tag</td>
+<td>vx.x.x.x</td>
+<td>不得使用 master 直接发布，由 master 派生 </td>
+</tr>
+</tbody>
+</table>
+</div></header></article></main><footer class="foot"><div class="foot-copy">&copy; 2018 - 2019 Tgroup</div></footer><script src="/tgroup/js/scroller.js"></script><script src="/tgroup/js/main.js"></script></body></html>
