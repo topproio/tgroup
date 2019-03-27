@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Tgroup"><link rel="alternative" href="/atom.xml" title="Tgroup" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>PHP代码规范 - Tgroup</title><link rel="stylesheet" href="/tgroup/css/main.css"><link rel="stylesheet" href="/tgroup/js/fancybox/jquery.fancybox.min.css"><!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--><script src="/tgroup/js/jquery-3.1.1.min.js"></script><script src="/tgroup/js/fancybox/jquery.fancybox.min.js"></script></head><body style="opacity:0"><header class="head"><h1 class="head-title u-fl"><a href="/tgroup/">Tgroup</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a class="head-nav__link" href="/tgroup/archives">Catalog/（目录）</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"><time class="post__time" datetime="2019-03-27T11:10:29.000Z">March 27, 2019</time><h1 class="post__title"><a href="/tgroup/2019/03/27/PHP代码规范/">PHP代码规范</a></h1><div class="post__main echo"><p>需要符合 <strong>PS-1</strong> <strong>PS-2</strong> <strong>PS-4</strong> 标准规范：</p>
+<p>基本代码规范，本篇规范制定了代码基本元素的相关标准，以确保共享的PHP代码间具有较高程度的技术互通性。</p>
+<blockquote>
+<p>关键词 <code>必须</code>（MUST）、<code>一定不可、一定不能</code>（MUST NOT）、<code>需要</code>（REQUIRED）、<code>将会</code>（SHALL）、<code>不会</code>（SHALL NOT）、<code>应该</code>（SHOULD）、<code>不该</code>（SHOULD NOT）、<code>推荐</code>（RECOMMENDED）、<code>可以</code>（MAY）和<code>可选</code>（OPTIONAL）。</p>
+</blockquote>
+<p>譬如：</p>
+<h2 id="PS-1"><a href="#PS-1" class="headerlink" title="PS-1"></a>PS-1</h2><ol>
+<li>PHP代码文件必须以&lt;?php 或&lt;?= 标签开头 </li>
+<li>PHP代码文件必须以不带BOM的UTF-8编码 【推荐阅读：utf-8与utf-8(无BOM)的区别】 </li>
+<li>PHP代码中应该只定义类、函数、常量等声明，或其他会产生从属效应的操作（生成文件输出以及修改.ini配置文件等），二者只能选其一 </li>
+<li>命名空间以及类必须符合PSR的自动加载规范：PSR-4; </li>
+<li>类的命名必须遵循StudlyCaps大写开头的驼峰命名规范; </li>
+<li>类中的常量所有字母都必须大写，单词间用下划线分隔； </li>
+<li>方法名称必须符合camelCase式的小写开头驼峰命名规范</li>
+</ol>
+<h2 id="PS-2："><a href="#PS-2：" class="headerlink" title="PS-2："></a>PS-2：</h2><ol>
+<li>代码必须使用四个空格符而不是tab键进行缩进。 </li>
+<li>每行的字符数应该软性保持在80个内，理论上不可多于120个，但一定不能由硬性限制 </li>
+<li>每个namespace命名空间声明语句和use声明语句块后面，必须插入一个空白行 </li>
+<li>类的开始花名号（{）必须在函数声明后自成一行，结束花名号(})也必须在函数主体后自成一行 </li>
+<li>类的属性和方法必须添加访问修饰符（private protected以及public），abstract以及final必须声明在访问修饰符之前，而static必须声明在访问修饰符之后。</li>
+<li>控制结构的关键字后必须要有一个空格符，而调用方法或函数时则一定不能有。 </li>
+<li>制结构的开始花括号（{）必须写在声明的同一行，而结束花括号（}）必须写在主体后自成一行。 </li>
+<li>控制结构的开始左括号后和结束右括号前，都一定不能有空格符。</li>
+</ol>
+<h2 id="PS-4"><a href="#PS-4" class="headerlink" title="PS-4"></a>PS-4</h2><ol>
+<li>class类、接口、traits可复用代码块以及其他类似结构。 </li>
+<li>一个完整的类名需要具有以下结构 <code>\&lt;命名空间&gt;(\&lt;子命名空间&gt;)*\&lt;类名&gt;</code></li>
+<li>完整的类名必须要有一个顶级命名空间，被称为“Vendor namespace” </li>
+<li>完整的类名可以有一个或多个子命名空间 </li>
+<li>完整的类名必须有一个最终的类名 </li>
+<li>完整的类名中任意一部分中的下划线都是没有特殊意义的 </li>
+<li>完整的类名可以由任意大小写字母组成 </li>
+<li>所有类名都必须是大小写敏感的 </li>
+</ol>
+</div></header><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a class="post__tag__link" href="/tgroup/tags/开发规范/">开发规范</a></li></ul></footer></article></main><footer class="foot"><div class="foot-copy">&copy; 2018 - 2019 Tgroup</div></footer><script src="/tgroup/js/scroller.js"></script><script src="/tgroup/js/main.js"></script></body></html>
